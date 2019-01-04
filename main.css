@@ -1,0 +1,34 @@
+body { margin: 60px auto; width: 90%;
+  -moz-osx-font-smoothing: grayscale;
+  -webkit-font-smoothing: antialiased;
+  /* min-width: 90%; */
+  max-width: 600px;
+  /* overflow-x: hidden;
+  overflow-y: scroll; */
+  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+
+a { text-decoration: none; color: #2d02a3c0
+; } /* #B71C1C */
+a:hover { text-decoration: underline; }
+
+p, ul, ol, table { color: rgb(30, 26, 65); font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+li {padding-bottom: 8px;}
+
+h1 { font-size: 2.5em; color: #1f026e  }
+h2 { font-size: 2.0em; color: #1f026e }
+h3 { font-size: 1.5em; color: #1f026e }
+h4 { font-size: 1.0em; color: #3183b3 } 
+
+nav ul, footer ul { font-size: 1em;  padding: 0px; list-style: none; font-weight: bold; }
+nav ul li, footer ul li { display: inline; margin-right: 15px; }
+
+footer { border-top: 1px solid #d5d5d5; font-size: .8em; }
+footer a {text-decoration: none; color: #333;}
+nav a {text-decoration: none; color: #333;}
+
+/* Blog */
+ul.posts { margin: 20px auto 40px; }
+ul.posts li { list-style: none; }
+
+p.meta { margin: 20px 20px 40px 40px;}
+.post { margin: 20px 20px 40px 40px; }
