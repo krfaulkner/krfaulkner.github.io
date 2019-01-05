@@ -38,7 +38,7 @@ nav a {text-decoration: none; color: #1f026e;}
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  padding-right: 50px;
+  padding-right: 100px;
   padding-top: 0px;
   padding-bottom: 20px;
 }
