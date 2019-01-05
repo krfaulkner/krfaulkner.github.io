@@ -30,6 +30,40 @@ footer { border-top: 1px solid #c7c7c7; font-size: 0.7em; }
 footer a {text-decoration: none; color: #1f026e;}
 nav a {text-decoration: none; color: #1f026e;}
 
+
+* {
+  box-sizing: border-box;
+}
+
+/* Create two equal columns that floats next to each other */
+.column {
+  float: left;
+  padding-right: 50px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+}
+.left {
+  width: 40%;
+}
+
+.right {
+  width: 60%;
+}
+
+/* Clear floats after the columns */
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 400px) {
+  .column {
+    width: 100%;
+  }
+}
+
 /* Blog */
 ul.posts { margin: 20px auto 40px; }
 ul.posts li { list-style: none; }
