@@ -7,14 +7,16 @@ body { margin: 60px auto; width: 90%;
   overflow-y: scroll; */
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
-a { text-decoration: none; color: #2d02a3c0
+a { text-decoration: none; color: #024583
 ; } /* #B71C1C */
 a:hover { text-decoration: underline; }
 
-p, ul, ol, table { color: rgb(30, 26, 65); font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+<!-- #8284ff -->
+
+p, ul, ol, table { color: #333742; font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 li {padding-bottom: 8px;}
 
-h1 { font-size: 1.5em; color: #2775b4 }
+h1 { font-size: 1.5em; color: #0071ce }
 h2 { font-size: 1.0em; color: #1f026e }
 h3 { font-size: 1.2em; color: #1f026e }
 h4 { font-size: 1.0em; color: #3183b3 } 
