@@ -73,7 +73,7 @@ nav a {text-decoration: none; color: #1f026e;}
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 100px;
+  width: 80px;
   background-color: #a7b2c5;
   color: #ffffff;
   text-align: center;
