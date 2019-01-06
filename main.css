@@ -74,7 +74,7 @@ nav a {text-decoration: none; color: #1f026e;}
 .tooltip .tooltiptext {
   visibility: hidden;
   width: 100px;
-  background-color: #c7c7c7;
+  background-color: #a7b2c5;
   color: #ffffff;
   text-align: center;
   padding: 5px 0;
@@ -100,7 +100,7 @@ nav a {text-decoration: none; color: #1f026e;}
   margin-top: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent #c7c7c7 transparent transparent;
+  border-color: transparent #a7b2c5 transparent transparent;
 }
 
 /* Show the tooltip text when you mouse over the tooltip container */
