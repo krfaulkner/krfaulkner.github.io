@@ -134,3 +134,27 @@ body, html {
   transform: translate(-50%, -50%);
   color: white;
 }
+
+/*Floating Back-To-Top Button*/
+    #myBtn {
+        position: fixed;
+        bottom: 10px;
+        float: right;
+        right: 5%;
+        max-width: 50px;
+        max-height: 50px;
+        width: 100%;
+        height: 100%;
+        font-size: 18px;
+        border-color: #35018ac0;
+        background-color: #35018a6e;
+        padding: .5px;
+        border-radius: 50%;
+
+    }
+/*On Hover Color Change*/
+    #myBtn:hover {
+        background-color: #35018ac0;
+        text-decoration: none;
+    }
+
