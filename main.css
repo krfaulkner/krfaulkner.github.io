@@ -150,11 +150,11 @@ body, html {
         background-color: #35018a6e;
         padding: .5px;
         border-radius: 50%;
-
+        color: white;
     }
 /*On Hover Color Change*/
     #myBtn:hover {
         background-color: #35018ac0;
         text-decoration: none;
+        cursor: pointer;
     }
-
