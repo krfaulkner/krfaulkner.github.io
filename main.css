@@ -8,33 +8,31 @@ body { margin: 60px auto; width: 90%;
   background-color: #fcfcfc;
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 
-a { text-decoration: none; color: #7357c1
-; } /* #024583 */
+/* ### Text formatting ###*/
+/* links */
+a { text-decoration: none; color: #6b51b1
+; } /* #024583 #7357c1 */
 a:hover { text-decoration: underline; }
-
-
+/* paragraphs, lists, tables */
 p, ul, ol, table { color: #333742; font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 li {padding-bottom: 8px;}
-
-h1 { font-size: 1.5em; color: #03639b }
+/* navigation and footer */
+nav ul, footer ul { font-size: 1.1em;  padding: 0px; list-style: none; font-weight: bold; }
+nav ul li, footer ul li { display: inline; margin-right: 15px; }
+nav {border-bottom: 1px solid #c7c7c7; }
+footer { border-top: 1px solid #c7c7c7; font-size: 0.7em; }
+footer a {text-decoration: none; color: #1f026e;}
+nav a {text-decoration: none; color: #35018a;}
+/* headings */
+h1 { font-size: 2.0em; color: #03639b }
 h2 { font-size: 1.0em; color: #35018a }
 h3 { font-size: 1.2em; color: #35018a }
 h4 { font-size: 1.0em; color: #3183b3 } 
 
-nav ul, footer ul { font-size: 1.1em;  padding: 0px; list-style: none; font-weight: bold; }
-nav ul li, footer ul li { display: inline; margin-right: 15px; }
-
-nav {border-bottom: 1px solid #c7c7c7; }
-
-footer { border-top: 1px solid #c7c7c7; font-size: 0.7em; }
-footer a {text-decoration: none; color: #1f026e;}
-nav a {text-decoration: none; color: #35018a;}
-
-
+/* ### Responsive Column Stacking ### */
 * {
   box-sizing: border-box;
 }
-
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
@@ -45,18 +43,15 @@ nav a {text-decoration: none; color: #35018a;}
 .left {
   width: 40%;
 }
-
 .right {
   width: 60%;
 }
-
 /* Clear floats after the columns */
 .row:after {
   content: "";
   display: table;
   clear: both;
 }
-
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 200px) {
   .column {
@@ -64,12 +59,12 @@ nav a {text-decoration: none; color: #35018a;}
   }
 }
 
+/* ### Tool tips ### */
 /* Tooltip container */
 .tooltip {
   position: relative;
   display: inline-block;
 }
-
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
@@ -79,18 +74,15 @@ nav a {text-decoration: none; color: #35018a;}
   text-align: center;
   padding: 5px 0;
   border-radius: 6px;
-
   /* Position the tooltip text */
   position: absolute;
   z-index: 1;
   top: 30%;
   left: 105%;
-
   /* Fade in tooltip */
   opacity: 0;
   transition: opacity 0.1s;
 }
-
 /* Tooltip arrow */
 .tooltip .tooltiptext::after {
   content: " ";
@@ -102,18 +94,17 @@ nav a {text-decoration: none; color: #35018a;}
   border-style: solid;
   border-color: transparent #a7b2c5 transparent transparent;
 }
-
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
   visibility: visible;
   opacity: 1;
 }
-
 body, html {
-    height: 100%;
+  height: 100%;
 }
 
-/* The hero image */
+/* ### Hero image/text ### */
+/* The image */
 .hero-image {
   background-image:  url("background3.jpg");
   /* Set a specific height */
@@ -124,7 +115,6 @@ body, html {
   background-size: cover;
   position: relative;
 }
-
 /* Place text in the middle of the image */
 .hero-text {
   text-align: center;
@@ -135,26 +125,28 @@ body, html {
   color: white;
 }
 
-/*Floating Back-To-Top Button*/
-    #myBtn {
-        position: fixed;
-        bottom: 10px;
-        float: right;
-        right: 5%;
-        max-width: 50px;
-        max-height: 50px;
-        width: 100%;
-        height: 100%;
-        font-size: 18px;
-        border-color: #35018ac0;
-        background-color: #35018a6e;
-        padding: .5px;
-        border-radius: 50%;
-        color: white;
-    }
-/*On Hover Color Change*/
-    #myBtn:hover {
-        background-color: #35018ac0;
-        text-decoration: none;
-        cursor: pointer;
-    }
+/* ### Floating Back-To-Top Button ### */
+/* make the button */
+#myBtn {
+  position: fixed;
+  bottom: 10px;
+  float: right;
+  right: 5%;
+  max-width: 50px;
+  max-height: 50px;
+  width: 100%;
+  height: 100%;
+  font-size: 18px;
+  border-color: #35018ac0;
+  background-color: #35018a6e;
+  padding: .5px;
+  border-radius: 50%;
+  color: white;
+}
+/*on hover changes*/
+#myBtn:hover {
+  background-color: #35018ac0;
+  text-decoration: none;
+  cursor: pointer;
+}
+
