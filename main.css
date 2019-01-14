@@ -175,7 +175,6 @@ border-radius: 15%;
   background-color: #f7f7f7;
   width: 100px;
   position: fixed;
-  height: 100%;
   overflow: auto;
 }
 .myNav-content li a {
@@ -186,11 +185,10 @@ border-radius: 15%;
   text-decoration: none;
 }
 .myNav {
-  margin: 0;
-  padding: 0;
+  margin-top: 20px;
+  padding: 0px 10px 0px 0px;
   width: 100px;
   position: fixed;
-  height: 100%;
   overflow: auto;
 }
 /* Sidebar links */
@@ -205,8 +203,7 @@ border-radius: 15%;
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.container {
   margin-left: 100px;
-  padding: 1px 16px;
-  height: 1000px;
+  padding: 10px 16px 10px 10px;
 }
 }
 
