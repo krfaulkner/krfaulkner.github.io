@@ -1,8 +1,8 @@
-body { margin: 60px auto; width: 90%;
+body { margin: 60px auto; width: 100%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 200px;
-  max-width: 800px;
+  max-width: 900px;
   overflow-x: scroll;
   overflow-y: scroll;
   background-color: #fcfcfc;
@@ -108,8 +108,8 @@ body, html {
 .hero-image {
   background-image:  url("background3.jpg");
   /* Set a specific height */
-  height: 15%;
-  width: 90%;
+  height: 20%;
+  width: 100%;
   min-width: 200px;
   max-width: 800px;
   /* Position and center the image to scale nicely on all screens */
@@ -183,7 +183,7 @@ border-radius: 15%;
 }
 .myNav {
   margin-top: 20px;
-  padding: 0px 10px 0px 0px;
+  padding: 0px 0px 0px 0px;
   width: 100px;
   position: fixed;
   overflow: auto;
@@ -200,8 +200,11 @@ border-radius: 15%;
 /* Page content. The value of the margin-left property should match the value of the sidebar's width property */
 div.container {
   margin-left: 100px;
+  max-width: 700px;
   padding: 10px 10px 10px 10px;
   margin-top: 9%;
+  max-height: 90%;
+  top: 10%;
 }
 }
 
