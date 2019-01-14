@@ -1,8 +1,8 @@
-body { margin: 60px auto; width: 100%;
+body { margin: 60px auto; width: 90%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 200px;
-  max-width: 900px;
+  max-width: 800px;
   overflow-x: scroll;
   overflow-y: scroll;
   background-color: #fcfcfc;
@@ -10,7 +10,7 @@ body { margin: 60px auto; width: 100%;
 
 /* ### Text formatting ###*/
 /* links */
-a { text-decoration: none; color: #5c4699
+a { text-decoration: none; color: #6b51b1
 ; } /* #024583 #7357c1 */
 a:hover { text-decoration: underline; }
 /* paragraphs, lists, tables */
@@ -108,20 +108,20 @@ body, html {
 .hero-image {
   background-image:  url("background3.jpg");
   /* Set a specific height */
-  height: 20%;
-  width: 100%;
-  min-width: 200px;
-  max-width: 800px;
+  height: 15%;
   /* Position and center the image to scale nicely on all screens */
   background-position: right top;
   background-repeat: no-repeat;
   background-size: cover;
-  top: 10px;
-  position: fixed; 
-  z-index: 3;
+  position: relative;
 }
 /* Place text in the middle of the image */
 .hero-text {
+  text-align: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   color: white;
 }
 
@@ -142,121 +142,10 @@ body, html {
   padding: .5px;
   border-radius: 50%;
   color: white;
-  font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 }
 /*on hover changes*/
 #myBtn:hover {
   background-color: #35018ac0;
   text-decoration: none;
   cursor: pointer;
-}
-
-/* ### Responsive Side Menu ### */
-/* The side navigation menu */
-@media screen and (min-width: 600px) {
-.myNavbtn {
-background-color: none;
-color: none;
-width: 0px;
-height: 0px;
-padding: 0px;
-font-size: 0px;
-border: none;
-cursor: pointer;
-border-radius: 15%;
-}
-.myNav-content ul {
-  margin: 0;
-  padding: 0;
-  background-color: #f7f7f7;
-  width: 100px;
-  height: 100%;
-  position: fixed;
-  overflow: auto;
-}
-.myNav-content li a {
-  display: block;
-  font-size: 0.9em;
-  color: #35018a;
-  padding: 5px 5px;
-  text-decoration: none;
-}
-.myNav {
-  margin-top: 20px;
-  padding: 0px 0px 0px 0px;
-  width: 100px;
-  position: fixed;
-  overflow: auto;
-}
-/* Sidebar links */
-.myNav-content a {
-  display: block;
-  padding: 5px;
-  font-size: 1.1em; 
-  color: #35018a;
-  text-decoration: none;
-}
-
-/* Page content. The value of the margin-left property should match the value of the sidebar's width property */
-div.container {
-  margin-left: 100px;
-  max-width: 700px;
-  padding: 10px 10px 10px 10px;
-  margin-top: 9%;
-  max-height: 90%;
-  top: 10%;
-}
-}
-
-@media screen and (max-width: 600px) {
-.myNavbtn {
-  background-color: #fcfcfc69;
-  color: #08090a73;
-  width: 30px;
-  height: 30px;
-  padding: 1px;
-  font-size: 16px;
-  border: none;
-  cursor: pointer;
-  border-radius: 15%;
-  position: fixed;
-}
-.myNav {
-  position: relative;
-  display: inline-block;
-}
-.myNav-content {
-  display: none;
-  position: absolute;
-  font-size: 1.1em; 
-  background-color: #f9f9f9;
-  min-width: 100px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  z-index: 1;
-}
-.myNav-content ul {
-  margin: 0;
-  padding: 0;
-  background-color: #a5a5a557;
-  width: 100px;
-  position: fixed;
-  overflow: auto;
-}
-.myNav-content ul a {
-  font-size: 0.9em; 
-  color: #35018a;
-  padding: 1px 10px;
-  text-decoration: none;
-  display: block;
-}
-.myNav-content a:hover {background-color: #bde5f173}
-.myNav:hover .myNav-content {
-  display: block;
-}
-.myNav:hover .myNavbtn {
-  color: #08090ab4;
-}
-div.container {
-  margin-left: 0px;
-}
 }
