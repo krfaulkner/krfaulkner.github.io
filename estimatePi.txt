@@ -1,0 +1,41 @@
+''' estimate pi by throwing darts at a board'''
+
+import random
+import math
+
+def forPi(n):
+    '''forPi uses a for loop to return an estimate of pi for n darts thrown
+        at a 2x2 square with a circle of radius 1 inside it by using the
+        ratio of the areas and the ratio of the darts out of the total that
+        land in the circle.'''
+    inSoFar=0
+    for i in range(n):
+        total = i+1
+        xCoord = random.uniform(-1.0,1.0)
+        yCoord = random.uniform(-1.0,1.0)
+        rSq = (xCoord)**2+(yCoord)**2 # Pythagorean theorem
+        if rSq <= 1:
+            inSoFar+=1
+        piEst = 4*inSoFar/total # area of square * proportion inside circle=4pi
+        print(inSoFar,' hits out of ', total,' throws so that pi is ',piEst)
+        
+def whilePi(error):
+    '''whilePi uses a while loop to return the number of darts thrown
+        at a 2x2 square with a circle of radius 1 inside it that give an
+        estimate of pi within the given error bound'''
+    inSoFar = 0
+    total = 0
+    while True:
+        xCoord = random.uniform(-1.0,1.0)
+        yCoord = random.uniform(-1.0,1.0)
+        rSq = (xCoord)**2+(yCoord)**2 # Pythagorean theorem
+        total+=1
+        if rSq <= 1:
+            inSoFar+=1
+        piEst = 4*inSoFar/total # area of square * proportion inside circle=4pi
+        print(inSoFar,' hits out of ', total,' throws so that pi is ',piEst)
+        if abs(math.pi-piEst)<=error:
+            break
+
+
+        
