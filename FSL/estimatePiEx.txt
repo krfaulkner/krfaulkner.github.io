@@ -1,0 +1,47 @@
+''' estimate pi by throwing darts at a board
+
+    fill in all ??? with appropriate number or formula
+    when you are done, run one of your functions! ( try forPi(100) or whilePi(0.001) )
+'''
+
+import random
+import math
+
+def forPi(n):
+    '''forPi uses a for loop to return an estimate of pi for n darts thrown
+        at a 2x2 square with a circle of radius 1 inside it by using the
+        ratio of the areas and the ratio of the darts out of the total that
+        land in the circle.'''
+    inSoFar=0
+    for i in range(n):
+        total = i+1                             # counter for total number of points generated so far
+        xCoord = random.uniform(-1.0,1.0)       # x coordinate of random point
+        yCoord = random.uniform(-1.0,1.0)       # y coordinate of random point
+        # use Pythagorean theorem to find rSq:
+        rSq = ???                               # distance of random point from (0,0)
+        # if the point is inside the circle (how dow we know???), add one to inSoFar
+        if rSq <= ???:
+            inSoFar+=1                          # counter for number of points inside the circle
+        piEst = ???                             # our estimate for pi based on i+1 darts
+        print(inSoFar,' hits out of ', total,' throws so that pi is ',piEst)
+        
+def whilePi(error):
+    '''whilePi uses a while loop to return the number of darts thrown
+        at a 2x2 square with a circle of radius 1 inside it that give an
+        estimate of pi within the given error bound'''
+    inSoFar = 0
+    total = 0
+    while True:
+        xCoord = random.uniform(-1.0,1.0)
+        yCoord = random.uniform(-1.0,1.0)
+        rSq = ???                               # same formula as in the for loop!
+        total+=1
+        if rSq <= ???:
+            inSoFar+=1
+        piEst = ???
+        print(inSoFar,' hits out of ', total,' throws so that pi is ',piEst)
+        if abs(math.pi-piEst)<=error:
+            break
+
+
+        
