@@ -20,8 +20,8 @@ li {padding-bottom: 8px;}
 nav ul, footer ul { font-size: 1.1em;  padding: 0px; list-style: none; font-weight: bold; }
 nav ul li, footer ul li { display: inline; margin-right: 15px; }
 nav {border-bottom: 1px solid #c7c7c7; }
-footer { border-top: 1px solid #c7c7c7; font-size: 0.7em; }
-footer a {text-decoration: none; color: #1f026e;}
+footer { border-top: 1px solid #c7c7c7; font-size: 0.9em; }
+footer a {text-decoration: none; color: #3e00a1;}
 nav a {text-decoration: none; color: #3e00a1;}
 /* headings */
 h1 { font-size: 2.0em; color: #03639b }
