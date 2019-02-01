@@ -29,20 +29,22 @@ h2 { font-size: 1.0em; color: #3e00a1 }
 h3 { font-size: 1.2em; color: #3e00a1 }
 h4 { font-size: 1.0em; color: #3183b3 } 
 /* Tables */
-td a {
-  display:block;
+table#mytab td a {
+  display: block ;
   width:100%;
+  height:100%;
 }
-td a:hover {
-  display:block;
-  width:100%;
+table#mytab td:hover {
   text-decoration: none;
-  background-color: #ebebeb;
+  background-color: #e4e4e4;
+}
+table#mytab td a:hover {
+  text-decoration: none;
 }
 table#mytab {
   width: 100%; 
   background-color: #f7f7f7;
-  border: 1px solid #c7c7c7;
+  /*border: 1px solid #c7c7c7;*/
   text-align:center;
 }
 table#mytab th {
