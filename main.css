@@ -2,7 +2,7 @@ body { margin: 0px auto; width: 90%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 200px;
-  max-width: 800px;
+  max-width: 900px;
   overflow-x: scroll;
   overflow-y: scroll;
   background-color: #fcfcfc;
@@ -29,7 +29,6 @@ h2 { font-size: 1.0em; color: #3e00a1 }
 h3 { font-size: 1.2em; color: #3e00a1 }
 h4 { font-size: 1.0em; color: #3183b3 } 
 /* Tables */
-
 td a {
   display:block;
   width:100%;
@@ -43,6 +42,8 @@ td a:hover {
 table#mytab {
   width: 100%; 
   background-color: #f7f7f7;
+  border: 1px solid #c7c7c7;
+  text-align:center;
 }
 table#mytab th {
   background-color: #f7f7f7;
@@ -52,6 +53,8 @@ table#mytab th {
 .myjumpto {
   border-bottom: 1px solid #c7c7c7;
 }
+@media screen and (max-width: 450px) {
+  table#mytab th {font-size: 0.8em;}}
 
 /* ### Responsive Column Stacking ### */
 * {
@@ -132,7 +135,7 @@ body, html {
 .hero-image {
   background-image:  url("background3.jpg");
   /* Set a specific height */
-  height: 15%;
+  height: 12%;
   /* Position and center the image to scale nicely on all screens */
   background-position: 95% 50%;
   background-repeat: no-repeat;
