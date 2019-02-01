@@ -28,6 +28,30 @@ h1 { font-size: 2.0em; color: #03639b }
 h2 { font-size: 1.0em; color: #3e00a1 }
 h3 { font-size: 1.2em; color: #3e00a1 }
 h4 { font-size: 1.0em; color: #3183b3 } 
+/* Tables */
+
+td a {
+  display:block;
+  width:100%;
+}
+td a:hover {
+  display:block;
+  width:100%;
+  text-decoration: none;
+  background-color: #ebebeb;
+}
+table#mytab {
+  width: 100%; 
+  background-color: #f7f7f7;
+}
+table#mytab th {
+  background-color: #f7f7f7;
+  font-size: 1.0em; 
+  color: #3183b3;
+}
+.myjumpto {
+  border-bottom: 1px solid #c7c7c7;
+}
 
 /* ### Responsive Column Stacking ### */
 * {
