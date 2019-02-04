@@ -16,6 +16,7 @@ a:hover { text-decoration: underline; }
 /* paragraphs, lists, tables */
 p, ul, ol, table { color: #333742; font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
 li {padding-bottom: 8px;}
+ul {list-style: none}
 /* navigation and footer */
 nav ul, footer ul { font-size: 1.1em;  padding: 0px; list-style: none; font-weight: bold; }
 nav ul li, footer ul li { display: inline; margin-right: 15px; }
@@ -51,6 +52,16 @@ table#mytab th {
   background-color: #f7f7f7;
   font-size: 1.0em; 
   color: #3183b3;
+}
+table#mytab th a {
+  color: #3183b3;
+  display: block ;
+  width:100%;
+  height:100%;
+}
+table#mytab th a:hover {
+  text-decoration: none;
+  font-style: italic;
 }
 .myjumpto {
   border-bottom: 1px solid #c7c7c7;
