@@ -154,7 +154,7 @@ body, html {
 .hero-image {
   background-image:  url("background3.jpg");
   /* Set a specific height */
-  height: 12%;
+  height: 15%;
   /* Position and center the image to scale nicely on all screens */
   background-position: 95% 50%;
   background-repeat: no-repeat;
