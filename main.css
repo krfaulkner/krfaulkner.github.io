@@ -21,7 +21,7 @@ ul {list-style: none}
 nav ul, footer ul { font-size: 1.1em;  padding: 0px; list-style: none; font-weight: bold; }
 nav ul li, footer ul li { display: inline; margin-right: 15px; }
 nav {border-bottom: 1px solid #c7c7c7; }
-footer { border-top: 1px solid #c7c7c7; font-size: 0.9em; }
+footer { border-top: 1px solid #c7c7c7; font-size: 1.0em; }
 footer a {text-decoration: none; color: #3e00a1;}
 nav a {text-decoration: none; color: #3e00a1;}
 /* headings */
