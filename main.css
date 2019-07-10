@@ -154,9 +154,9 @@ body, html {
 .hero-image {
   background-image:  url("icebergs.jpg");
   /* Set a specific height */
-  height: 15%;
+  height: 20%;
   /* Position and center the image to scale nicely on all screens */
-  background-position: 95% 50%;
+  background-position: 100% 50%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
