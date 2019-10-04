@@ -2,11 +2,19 @@ body { margin: 0px auto; width: 90%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 200px;
-  max-width: 900px;
+  max-width: 800px;
   overflow-x: scroll;
   overflow-y: scroll;
   background-color: #ffffff;
   font-family: BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+
+div.card{
+  min-width: 220px;
+  max-width: 820px;
+  padding: 10px;
+  margin-top: 0px;
+  margin-bottom: 20px;
+  box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);}
 
 /* ### Text formatting ###*/
 /* links */
@@ -82,16 +90,17 @@ table#mytab th a:hover {
 /* Create two equal columns that floats next to each other */
 .column {
   float: left;
-  padding-right: 50px;
+  padding-right: 10px;
   padding-top: 0px;
   padding-bottom: 20px;
 }
-.left {
-  width: 40%;
+.left{
+  width: 30%;
 }
-.right {
-  width: 60%;
+.right{
+  width:70%;
 }
+
 /* Clear floats after the columns */
 .row:after {
   content: "";
@@ -99,7 +108,7 @@ table#mytab th a:hover {
   clear: both;
 }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 200px) {
+@media screen and (max-width: 450px) {
   .column {
     width: 100%;
   }
@@ -114,7 +123,7 @@ table#mytab th a:hover {
 /* Tooltip text */
 .tooltip .tooltiptext {
   visibility: hidden;
-  width: 80px;
+  width: 60px;
   background-color: #a7b2c5;
   color: #ffffff;
   text-align: center;
@@ -123,8 +132,8 @@ table#mytab th a:hover {
   /* Position the tooltip text */
   position: absolute;
   z-index: 1;
-  top: 30%;
-  left: 105%;
+  bottom: 102%;
+  left: 35%;
   /* Fade in tooltip */
   opacity: 0;
   transition: opacity 0.1s;
@@ -133,12 +142,12 @@ table#mytab th a:hover {
 .tooltip .tooltiptext::after {
   content: " ";
   position: absolute;
-  top: 50%;
-  right: 100%; /* To the left of the tooltip */
-  margin-top: -5px;
+  top: 100%; /* At the bottom of the tooltip */
+  left: 50%;
+  margin-left: -5px;
   border-width: 5px;
   border-style: solid;
-  border-color: transparent #a7b2c5 transparent transparent;
+  border-color: #a7b2c5 transparent transparent transparent;
 }
 /* Show the tooltip text when you mouse over the tooltip container */
 .tooltip:hover .tooltiptext {
@@ -152,15 +161,19 @@ body, html {
 /* ### Hero image/text ### */
 /* The image */
 .hero-image {
-  background-image:  url("icebergs2.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("icebergs2.jpg");
   /* Set a specific height */
   height: 20%;
   /* Position and center the image to scale nicely on all screens */
-  background-position: 100% 50%;
+  background-position: 100% 45%;
   background-repeat: no-repeat;
   background-size: cover;
   position: relative;
 }
+@media screen and (max-width: 795px) {
+  .hero-image {height:100px;}}
+@media screen and (max-width: 545px) {
+  .hero-image {height:150px;}}
 /* Place text in the middle of the image */
 .hero-text {
   text-align: center;
@@ -168,7 +181,6 @@ body, html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  color: white;
 }
 
 /* ### Floating Back-To-Top Button ### */
