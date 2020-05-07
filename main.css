@@ -207,7 +207,7 @@ body, html {
 /* ### Hero image/text ### */
 /* The image */
 .hero-image {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("pictures/icebergs2.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("icebergs2.jpg");
   /* Set a specific height */
   width: 100%;
   /* Position and center the image to scale nicely on all screens */
