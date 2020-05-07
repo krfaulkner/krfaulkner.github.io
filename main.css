@@ -1,12 +1,17 @@
-body { margin: 20px auto; width: 95%; height: 95%;
+body { margin: 20px auto; width: 95%; 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 200px;
-  max-width: 900px;
+  max-width: 1000px;
   overflow-x: scroll;
   overflow-y: scroll;
-  background-color: #eef8ff;
+  background-color: #f5fbff;
   font-family: BlinkMacSystemFont, system-ui, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+
+.container{
+  padding-block-end: 20px;
+}
+
 
 .card{
   width: 100%;
@@ -100,11 +105,16 @@ table#mytab th a:hover {
   padding-bottom: 0px;
 }
 .left{
-  width: 35%;
+  width: 30%;
+  min-width: 150px;
+  max-width: 200px;
+}
+.middle{
+  width:20%;
   max-width: 200px;
 }
 .right{
-  width:65%;
+  width:50%;
 }
 
 /* Clear floats after the columns */
@@ -114,22 +124,33 @@ table#mytab th a:hover {
   clear: both;
 }
 /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
-@media screen and (max-width: 400px) {
+@media screen and (max-width: 500px) {
   .column {
     width: 90%;
   }
 }
 
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
 
 /* clearfix */
 
 .clearfix {
   overflow: auto;
+  position: relative;
   padding-top: 10px;
   padding-bottom: 15px;
 }
-.img1{
+.imgR{
   float: right;
+}
+.imgL{
+  float: left;
 }
 
 
@@ -156,7 +177,9 @@ table#mytab th a:hover {
   position: absolute;
   z-index: 2;
   bottom: 102%;
-  left: 35%;
+  left: 50%;
+  -ms-transform: translateX(-40%);
+  transform: translateX(-40%);
   /* Fade in tooltip */
   opacity: 0;
   transition: opacity 0.1s;
@@ -184,7 +207,7 @@ body, html {
 /* ### Hero image/text ### */
 /* The image */
 .hero-image {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("icebergs2.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("pictures/icebergs2.jpg");
   /* Set a specific height */
   width: 100%;
   /* Position and center the image to scale nicely on all screens */
