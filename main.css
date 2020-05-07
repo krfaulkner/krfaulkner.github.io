@@ -1,8 +1,8 @@
-body { margin: 10px auto; width: 95%;
+body { margin: 20px auto; width: 95%; height: 95%;
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
   min-width: 200px;
-  max-width: 1000px;
+  max-width: 900px;
   overflow-x: scroll;
   overflow-y: scroll;
   background-color: #eef8ff;
@@ -13,7 +13,8 @@ body { margin: 10px auto; width: 95%;
   background-color: #ffffff;
   box-shadow: 0 40px 80px 0 rgba(0, 0, 0, 0.2), 0 10px 20px 0 rgba(0, 0, 0, 0.19);}
 .card-text{
-  padding:5%;
+  padding: 5%;
+  padding-bottom: 2%;
 }
 
 
@@ -27,18 +28,19 @@ p, ul, ol, table { color: #333742; font-family: BlinkMacSystemFont, system-ui, -
 li {padding-bottom: 8px;}
 ul {list-style: none}
 /* navigation and footer */
-nav ul, footer ul { font-size: 1.1em;  padding: 0px; list-style: none; font-weight: bold; }
+nav ul, footer ul { font-size: 1.5em;  padding: 0px; list-style: none; font-weight: bold; }
 nav ul li, footer ul li { display: inline; margin-right: 15px; }
 nav {border-bottom: 1px solid #c7c7c7; }
 footer { border-top: 1px solid #c7c7c7; font-size: 1.0em; }
 footer a {text-decoration: none; color: #3e00a1;}
 nav a {text-decoration: none; color: #3e00a1;}
+button a {text-decoration: none; color:white;}
 /* headings */
 h1 { font-size: 2.0em; color: #03639b }
 h2 { font-size: 1.5em; color: #3e00a1 }
 h3 { font-size: 1.2em; color: #3e00a1 }
 h4 { font-size: 1.0em; color: #3183b3 } 
-H5 { font-size: 1.0em; font-style: italic; color: #3183b3 } 
+h5 { font-size: 1.0em; font-style: italic; font-weight: normal; color: #3183b3 } 
 /* Tables */
 table#mytab td a {
   display: block ;
@@ -94,7 +96,7 @@ table#mytab th a:hover {
   float: left;
   padding-right: 10px;
   padding-top: 0px;
-  padding-bottom: 20px;
+  padding-bottom: 0px;
 }
 .left{
   width: 35%;
@@ -123,6 +125,7 @@ table#mytab th a:hover {
 .clearfix {
   overflow: auto;
   padding-top: 10px;
+  padding-bottom: 15px;
 }
 .img1{
   float: right;
@@ -135,7 +138,7 @@ table#mytab th a:hover {
   position: relative;
   display: inline-block;
   padding-top:40px;
-  padding-left:10px;
+  padding-left:20px;
   padding-bottom: 10px;
 }
 /* Tooltip text */
@@ -150,7 +153,7 @@ table#mytab th a:hover {
   border-radius: 6px;
   /* Position the tooltip text */
   position: absolute;
-  z-index: 1;
+  z-index: 2;
   bottom: 102%;
   left: 35%;
   /* Fade in tooltip */
@@ -174,13 +177,13 @@ table#mytab th a:hover {
   opacity: 1;
 }
 body, html {
-  height: 100%;
+  height: 90%;
 }
 
 /* ### Hero image/text ### */
 /* The image */
 .hero-image {
-  background-image: linear-gradient(rgba(255, 255, 255, 0.65), rgba(255, 255, 255, 0.65)), url("icebergs2.jpg");
+  background-image: linear-gradient(rgba(255, 255, 255, 0.7), rgba(255, 255, 255, 0.7)), url("icebergs2.jpg");
   /* Set a specific height */
   width: 100%;
   /* Position and center the image to scale nicely on all screens */
@@ -212,6 +215,7 @@ body, html {
   background-color: #3e00a183;
   padding: .5px;
   border-radius: 50%;
+  z-index: 1;
   color: white;
 }
 /*on hover changes*/
