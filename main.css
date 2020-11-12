@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&family=Open+Sans&family=Roboto:wght@100&display=swap');
 body { margin: 20px auto; width: 95%; 
   -moz-osx-font-smoothing: grayscale;
   -webkit-font-smoothing: antialiased;
@@ -6,7 +7,7 @@ body { margin: 20px auto; width: 95%;
   overflow-x: scroll;
   overflow-y: scroll;
   background-color: #f5fbff;
-  font-family: BlinkMacSystemFont, system-ui, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+  font-family: "Lato", "Open Sans","Roboto"; }
 
 .container{
   padding-block-end: 20px;
@@ -30,11 +31,11 @@ a { text-decoration: none; color: #6b51b1
 ; } /* #024583 #7357c1 */
 a:hover { text-decoration: underline; }
 /* paragraphs, lists, tables */
-p, ul, ol, table { color: #333742; font-family: BlinkMacSystemFont, system-ui, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }
+p, ul, ol, table { color: #333742; font-family: "Lato", "Open Sans","Roboto"; }
 li {padding-bottom: 8px;}
 ul {list-style: none}
 /* navigation and footer */
-nav ul, footer ul { font-size: 1.5em;  padding: 0px; list-style: none; font-weight: bold; }
+nav ul, footer ul { font-size: 1.5em;  padding: 0px; list-style: none; font-weight: normal; }
 nav ul li, footer ul li { display: inline; margin-right: 15px; }
 nav {border-bottom: 1px solid #c7c7c7; }
 footer { border-top: 1px solid #c7c7c7; font-size: 1.0em; }
@@ -42,10 +43,10 @@ footer a {text-decoration: none; color: #3e00a1;}
 nav a {text-decoration: none; color: #3e00a1;}
 button a {text-decoration: none; color:white;}
 /* headings */
-h1 { font-size: 2.0em; color: #03639b }
-h2 { font-size: 1.5em; color: #3e00a1 }
-h3 { font-size: 1.2em; color: #3e00a1 }
-h4 { font-size: 1.0em; color: #3183b3 } 
+h1 { font-size: 2.0em; color: #03639b; font-weight: normal }
+h2 { font-size: 1.5em; color: #3e00a1; font-weight: normal }
+h3 { font-size: 1.2em; color: #3e00a1; font-weight: normal }
+h4 { font-size: 1.0em; color: #3183b3; font-weight: normal } 
 h5 { font-size: 1.0em; font-style: italic; font-weight: normal; color: #3183b3 } 
 /* Tables */
 table#mytab td a {
