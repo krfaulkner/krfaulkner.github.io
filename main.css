@@ -154,6 +154,12 @@ table#mytab th a:hover {
   float: left;
 }
 
+.imgC {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+}
 
 /* ### Tool tips ### */
 /* Tooltip container */
